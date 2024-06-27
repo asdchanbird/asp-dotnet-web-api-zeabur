@@ -269,7 +269,7 @@ try
         ConnectionMultiplexer.Connect(
             new ConfigurationOptions()
             {
-                EndPoints = { { "10.255.255.10", 6379 } }
+                EndPoints = { { "10.255.255.11", 6379 } }
             }
         )
      );
@@ -295,20 +295,20 @@ if (app.Environment.IsDevelopment())
     //app.UseSwagger();
     //app.UseSwaggerUI();
 
-    // 啟動Swagger
-    app.UseSwagger(c =>
-    {
-        c.RouteTemplate = "swagger/{documentName}/swagger.json";
-    });
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/ChatManagement/swagger.json", "聊天室管理");
-        c.SwaggerEndpoint("/swagger/FriendManagement/swagger.json", "好友管理");
-        c.SwaggerEndpoint("/swagger/SocialManagement/swagger.json", "社群管理");
-        c.SwaggerEndpoint("/swagger/PersonalSettingManagement/swagger.json", "個人化管理");
-
-    });
 }
+// 啟動Swagger
+app.UseSwagger(c =>
+{
+    c.RouteTemplate = "swagger/{documentName}/swagger.json";
+});
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/ChatManagement/swagger.json", "聊天室管理");
+    c.SwaggerEndpoint("/swagger/FriendManagement/swagger.json", "好友管理");
+    c.SwaggerEndpoint("/swagger/SocialManagement/swagger.json", "社群管理");
+    c.SwaggerEndpoint("/swagger/PersonalSettingManagement/swagger.json", "個人化管理");
+
+});
 
 app.UseHttpsRedirection();
 app.UseAuthentication();;
