@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "2LiF4Bl+kDBciEZg9FjWLlKLUyHCa3dXPkF+VoEImx0=",
+  "Source": "asp-dotnet-web-api-template",
+  "BasePath": "_content/asp-dotnet-web-api-template",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

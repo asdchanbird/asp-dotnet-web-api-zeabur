@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\asp-dotnet-web-api-template.props" />
+</Project>
