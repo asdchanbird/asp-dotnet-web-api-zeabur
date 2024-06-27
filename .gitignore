@@ -1,0 +1,35 @@
+﻿################################################################################
+# 這個 .gitignore 檔案由 Microsoft(R) Visual Studio 自動建立。
+################################################################################
+
+/ChitChit/Views/Home/Clereass.cs
+/ChitChit/bin/*
+/ChitChit/obj/*
+/ChitChit/ConfigFile/*
+/ChitChit/Log/*
+/ChitChit/ChitChit.sln
+.vs/*
+/ChitChit/.vs/*
+
+# Docker配置
+# /PlayBackManagement/Docker發佈/image/*
+# /PlayBackManagement/Docker部署*.tar
+# /PlayBackManagement/Docker部署/PlayBackManagement/*
+
+# MSSQL
+/MSSQLServer/mssql/*
+/RedisServer/mssql/*
+
+# Redis
+/RedisServer/mydata/*
+
+
+/bin/*
+/obj/*
+/Log/*
+.vs/*
+/.vs/*
+
+
+
+
